@@ -39,6 +39,12 @@ class _NewMessageState extends State<NewMessage> {
       'text': enteredMessage,
       'createdAt': Timestamp.now(),
       'userId': user.uid,
+      /*
+          Those data are unnecessary 
+          because we actually have userId
+          but this app is just for learning purpose
+          so I didn't fix this performance issue
+      */
       'username': userData.data()!['username'],
       'userImage': userData.data()!['image_url'],
     });
